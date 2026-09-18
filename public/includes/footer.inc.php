@@ -1,115 +1,237 @@
- <footer class="footer" data-component="footer" data-astro-cid-wxezf4vu>
-        <div class="footer__inner" data-astro-cid-wxezf4vu> <img src="/public/assets/uploads/<?= $this->_company['c_logo'] ?>" alt="<?= $this->_company['c_name'] ?>" loading="lazy" data-astro-cid-wxezf4vu="true" decoding="async" fetchpriority="auto" width="238" height="32">
-            <div class="footer__grid" data-astro-cid-wxezf4vu>
-                <div data-astro-cid-wxezf4vu>
-                    <p class="footer__column-title" data-astro-cid-wxezf4vu>About</p>
-                    <ul data-astro-cid-wxezf4vu>
-                        <li data-astro-cid-wxezf4vu> <a href="/about/" data-astro-cid-wxezf4vu>About Us</a> </li>
-                        <li data-astro-cid-wxezf4vu> <a href="/" data-astro-cid-wxezf4vu>Careers</a> </li>
-                        <li data-astro-cid-wxezf4vu> <a href="/contact-us" data-astro-cid-wxezf4vu>Contact Us</a> </li>
-                    </ul>
-                </div>
-                <div data-astro-cid-wxezf4vu>
-                    <p class="footer__column-title" data-astro-cid-wxezf4vu>Services</p>
-                    <ul data-astro-cid-wxezf4vu>
-                        <li data-astro-cid-wxezf4vu> <a href="/weight-loss/" data-astro-cid-wxezf4vu>Weight Management</a> </li>
-                        <li data-astro-cid-wxezf4vu> <a href="/online-doctor/" data-astro-cid-wxezf4vu>General Health</a> </li>
-                    </ul>
-                </div>
-                <div data-astro-cid-wxezf4vu>
-                    <p class="footer__column-title" data-astro-cid-wxezf4vu>Legal</p>
-                    <ul data-astro-cid-wxezf4vu>
-                        <li data-astro-cid-wxezf4vu> <a href="/customer-care/privacy-policy/" data-astro-cid-wxezf4vu>Privacy Policy</a> </li>
-                        <li data-astro-cid-wxezf4vu> <a href="/customer-care/terms-and-conditions/" data-astro-cid-wxezf4vu>Terms and Conditions</a> </li>
-                        <li data-astro-cid-wxezf4vu> <a href="/customer-care/price-promise/" data-astro-cid-wxezf4vu>Price Promise</a> </li>
-                        <li data-astro-cid-wxezf4vu> <a href="/customer-care/delivery/" data-astro-cid-wxezf4vu>Delivery</a> </li>
-                        <li data-astro-cid-wxezf4vu> <a href="/customer-care/returns-refunds-cancellations/" data-astro-cid-wxezf4vu>Returns Policy</a> </li>
-                    </ul>
+  <div class="top-footer">
+                <div class="container">
+
+
                 </div>
             </div>
-            
-            <div class="footer__row" data-astro-cid-wxezf4vu>
-                <div class="footer__social" data-astro-cid-wxezf4vu> <a href="<?= $this->_company['c_facebook']??"" ?>" target="_blank" rel="noopener noreferrer" aria-label="Facebook" data-astro-cid-wxezf4vu> <svg viewBox="0 0 24 24" aria-hidden="true" data-astro-cid-wxezf4vu>
-                            <path d="M15 3h-3a4 4 0 0 0-4 4v3H5v4h3v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h3z" fill="currentColor" data-astro-cid-wxezf4vu></path>
-                        </svg> </a> <a href="<?= $this->_company['c_twitter']??"" ?>" target="_blank" rel="noopener noreferrer" aria-label="X" data-astro-cid-wxezf4vu> <svg viewBox="0 0 24 24" aria-hidden="true" data-astro-cid-wxezf4vu>
-                            <path d="M4 4l7.5 8.8L4.7 20h3.4l5.2-5.9L18 20h2l-7.9-9.3L19.2 4h-3.4l-4.7 5.4L6.2 4z" fill="currentColor" data-astro-cid-wxezf4vu></path>
-                        </svg> </a> <a href="<?= $this->_company['c_instagram']??"" ?>" target="_blank" rel="noopener noreferrer" aria-label="Instagram" data-astro-cid-wxezf4vu> <svg viewBox="0 0 24 24" aria-hidden="true" data-astro-cid-wxezf4vu>
-                            <path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm5 5.5A4.5 4.5 0 1 0 16.5 13 4.5 4.5 0 0 0 12 8.5zm5.2-2.7a1.1 1.1 0 1 0 1.1 1.1 1.1 1.1 0 0 0-1.1-1.1z" fill="currentColor" data-astro-cid-wxezf4vu></path>
-                        </svg> </a> </div>
-                <div class="footer__trust-badges" data-astro-cid-wxezf4vu>
-                    <div class="footer__seal" data-astro-cid-wxezf4vu> <a href="https://www.legitscript.com/websites/?checker_keywords=<?= $_SERVER['SERVER_NAME'] ?>" target="_blank" rel="noopener noreferrer" aria-label="LegitScript approved" data-astro-cid-wxezf4vu> <img src="https://static.legitscript.com/seals/695562.png" alt="LegitScript approved" width="60" height="43" loading="lazy" data-astro-cid-wxezf4vu> </a> </div> <span class="footer__gphc" data-astro-cid-wxezf4vu>
-                        Pharmacy Number: <?= $this->_company['c_tel'] ?> </span>
+
+            <div class="widget-footer">
+                <div class="container">
+                    <div class="widget-footer-wrap thnk-col-4">
+                        <div class="widget-footer-col1">
+
+                            <div id="block-43" class="widget widget_block">
+                                <ul class="wp-block-page-list">
+                                    <li class="wp-block-pages-list__item"><a class="wp-block-pages-list__item__link" href="/about-us/">About Us</a></li>
+                                    <li class="wp-block-pages-list__item"><a class="wp-block-pages-list__item__link" href="/" >Home</a></li>
+                                    <li class="wp-block-pages-list__item">
+<a class="wp-block-pages-list__item__link" href="/cart/">Cart</a><span class="cart-numbers"><sup>0</sup></span></li>
+                                    <li class="wp-block-pages-list__item"><a class="wp-block-pages-list__item__link" href="/checkout/">Checkout</a></li>
+                                    <li class="wp-block-pages-list__item"><a class="wp-block-pages-list__item__link" href="/contact-us/">Contact Us</a></li>
+                                    <li class="wp-block-pages-list__item"><a class="wp-block-pages-list__item__link" href="/faq/">FAQ</a></li>
+                                    <li class="wp-block-pages-list__item"><a class="wp-block-pages-list__item__link" href="/login/">My account</a></li>
+                                    <li class="wp-block-pages-list__item"><a class="wp-block-pages-list__item__link" href="/pay-with-bitcoin/">Pay With Bitcoin</a></li>
+                                    <li class="wp-block-pages-list__item"><a class="wp-block-pages-list__item__link" href="/refund_returns/">Refund Policy</a></li>
+                                    <li class="wp-block-pages-list__item"><a class="wp-block-pages-list__item__link" href="/shop/">Shop</a></li>
+                                </ul>
+                            </div>
+                            <div id="block-50" class="widget widget_block widget_media_image">
+                                <figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="209" height="131" src="/public/assets/uploads/5tr67.jpg.bv.webp" alt="" class="wp-image-2453 bv-image-lazyload" /></figure>
+                            </div>
+                        </div>
+                        <div class="widget-footer-col2">
+                            <div id="block-44" class="widget widget_block widget_search">
+                                <form role="search" method="get" action="/shop" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search"><label class="wp-block-search__label" for="wp-block-search__input-3">Search</label>
+                                    <div class="wp-block-search__inside-wrapper"><input class="wp-block-search__input" id="wp-block-search__input-3" placeholder="Search products..." value="" type="search" name="q" required /><input type="hidden" name="post_type" value="product" /><button aria-label="Search" class="wp-block-search__button wp-element-button" type="submit">Search</button></div>
+                                </form>
+                            </div>
+                            <div id="block-45" class="widget widget_block widget_media_image">
+                                <figure class="wp-block-image size-full is-resized is-style-rounded"><img loading="lazy" decoding="async" width="596" height="800" src="/public/assets/uploads/7yu7-480.jpg.bv.webp" alt="" class="wp-image-805 bv-image-lazyload" style="width:117px;height:auto" /></figure>
+                            </div>
+                            <div id="block-49" class="widget widget_block widget_media_image">
+                                <figure class="wp-block-image aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="1000" height="1000" src="/public/assets/uploads/Rick-Simpson-Oil-UK-480.png.bv.webp" alt="Rick Simpson Oil UK" class="wp-image-255 bv-image-preloaded" style="width:145px;height:auto" sizes="auto, (max-width: 1000px) 100vw, 1000px" bv-orig-srcset="/public/assets/uploads/Rick-Simpson-Oil-UK-480.png.bv.webp 1000w, /public/assets/uploads/Rick-Simpson-Oil-UK-480.png.bv.webp 100w, /public/assets/uploads/Rick-Simpson-Oil-UK-480.png.bv.webp 600w" srcset="/public/assets/uploads/Rick-Simpson-Oil-UK-480.png.bv.webp 480w, /public/assets/uploads/Rick-Simpson-Oil-UK-480.png.bv.webp 820w, /public/assets/uploads/Rick-Simpson-Oil-UK-480.png.bv.webp 1000w" />
+                                    <figcaption class="wp-element-caption">Rick Simpson Oil UK</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="widget-footer-col3">
+                            <div id="block-53" class="widget widget_block">
+                                <div class="wp-block-group has-black-color has-vivid-green-cyan-background-color has-text-color has-background has-link-color wp-elements-1 is-layout-constrained wp-block-group-is-layout-constrained" style="border-style:none;border-width:0px;padding-top:0;padding-bottom:0">
+                                    <div data-block-name="woocommerce/featured-product" data-edit-mode="false" data-min-height="338" data-product-id="285" class="wc-block-featured-product alignnone has-background-dim wp-block-woocommerce-featured-product" style="min-height:338px;">
+                                       
+                                    <?php 
+                    $count = 0;
+                    foreach($this->_categories as $category ) { 
+                        if ($count >= 1) break;
+                        if ($category['category_type'] !== 'products') continue;
+                           foreach($category['inner_content'] as $row) {
+                ?>
+                                        <div class="wc-block-featured-product__wrapper">
+                                            <div class="background-dim__overlay" style="background-color: #000000"></div><img decoding="async" alt="<?= $row['title'] ?>" class="wc-block-featured-product__background-image bv-image-lazyload" src="/<?= $row['image'] ?>" style="object-fit: none;object-position: 50% 50%;" />
+                                            <h2 class="wc-block-featured-product__title"><?= $row['title'] ?></h2>
+                                            <div class="wc-block-featured-product__description">
+                                                <?= substr(strip_tags($row['content']),0, 60) ?>
+                                            </div>
+                                            <div class="wc-block-featured-product__price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span><?= $row['price'] ?></bdi></span></div>
+                                            <div class="wc-block-featured-product__inner-blocks">
+
+                                                <div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex">
+                                                    <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/product/<?= $row['slug'] ?>">Shop now</a></div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                       <?php $count++; }} ?> 
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="widget-footer-col4">
+                            <div id="woocommerce_top_rated_products-4" class="widget woocommerce widget_top_rated_products">
+                                <h4 class="widget-title">Top rated products</h4>
+                                <ul class="product_list_widget">
+                                   
+
+                                    <?php 
+                                        $count = 0;
+                                        foreach($this->_categories as $category ) { 
+                                            if ($count >= 5) break;
+                                            if ($category['category_type'] !== 'products') continue;
+
+                                            foreach($category['inner_content'] as $row) {
+                                    ?>
+                                     <li>
+
+                                        <a href="/product/<?= $row['slug'] ?>">
+                                            <img width="320" height="320" 
+                                            src="/<?= $row['image'] ?>" 
+                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail bv-image-lazyload" 
+                                            alt="<?= $row['title'] ?>" decoding="async" loading="lazy" 
+                                            sizes="auto, (max-width: 320px) 100vw, 320px" 
+                                            bv-orig-srcset="/<?= $row['image'] ?> 320w, 
+                                            /<?= $row['image'] ?> 300w, /<?= $row['image'] ?> 150w, /<?= $row['image'] ?> 600w, 
+                                            /<?= $row['image'] ?> 100w, /<?= $row['image'] ?> 48w, /<?= $row['image'] ?> 768w" /> 
+                                            <span class="product-title"><?= $row['title'] ?></span>
+                                        </a>
+
+                                        <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
+                                            <span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5</span>
+                                        </div>
+                                        <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol" 
+                                        translate="no">&pound;</span><?= $row['price'] ?></bdi></span>
+                                    </li>
+
+                                    <?php $count++; }} ?> 
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
-            <div class="footer__info" data-astro-cid-wxezf4vu>
-                <p data-astro-cid-wxezf4vu>
-                    <?= $this->_company['c_name'] ?> is owned by the UK registered company: <strong data-astro-cid-wxezf4vu><?= $this->_company['c_name'] ?> Limited</strong>
-                    (company no: <strong data-astro-cid-wxezf4vu>SC498329</strong>)
-                </p>
-                <p data-astro-cid-wxezf4vu> <strong data-astro-cid-wxezf4vu>Registered Office:</strong><br data-astro-cid-wxezf4vu>
-                    <?= $this->_company['c_address'] ?>
-                </p>
-                <p data-astro-cid-wxezf4vu>
-                    Pharmacy GPhC registration number:
-                    <a href="https://www.pharmacyregulation.org/registers/pharmacy/<?= $this->_company['c_tel'] ?>" target="_blank" rel="noopener noreferrer" data-astro-cid-wxezf4vu> <strong data-astro-cid-wxezf4vu><?= $this->_company['c_tel'] ?></strong> </a>
-                </p>
-                <p class="footer__copyright" data-astro-cid-wxezf4vu>© <script>document.write(new Date().getFullYear() )</script> <?= $this->_company['c_name'] ?>. All rights reserved.</p>
+
+            <div class="below-footer">
+                <div class="container">
+                    <div class="below-footer-bar thnk-col-1">
+                        <div class="below-footer-col1">
+                            <p class="footer-copyright">&copy;
+                                <script>document.write(new Date().getFullYear())</script> <a href=""><?= $this->_company['c_name'] ?></a>
+                                <span class="powered-by-wordpress">
+                                    <span>Designed by</span>
+                                    <a href="/" target="_blank" rel="nofollow noopener">
+                                        Hunk</a>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
-    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+
     <script src="/public/js/main.js"></script>
+    <?php require 'public/includes/toast.inc.php' ?>
+    <script src="/public/js/toast.js"></script>
+    <script src="/public/js/cart.js?v=<?= rand() ?>"></script>
     <script>
-        (function() {
-            const isDev = false;
+        const cart = new Cart(`<?= CART_ID ?>`); 
+        const cartTable = document.querySelector("#cartTable");
 
-            (() => {
-                const pageTypeValue = document.body?.dataset.pageType || 'landing';
-                const payload = {
-                    event: 'page_viewed',
-                    page_type: pageTypeValue,
-                    timestamp: new Date().toISOString(),
-                };
+        cart.get().then(data => { 
+            const totalInCart = data.total; 
+            updateNumbers(totalInCart);
 
-                if (typeof window !== 'undefined') {
-                    if (typeof window.snowplow === 'function') {
-                        window.snowplow('trackStructEvent', 'page', 'viewed', payload.page_type);
-                    } else if (isDev) {
-                        console.info('[analytics] page_viewed', payload);
-                    }
-                }
-            })();
-        })();
-    </script>
-    <script>
-        (function() {
-            function c() {
-                var b = a.contentDocument || (a.contentWindow && a.contentWindow.document);
-                if (b) {
-                    var d = b.createElement('script');
-                    d.innerHTML = "window.__CF$cv$params={r:'a3023b8d2ac5af03',t:'MTc4NzU3MzIwNA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
-                    b.getElementsByTagName('head')[0].appendChild(d)
-                }
+            const pathname = location.pathname;
+            if (pathname === "/cart/" || pathname === "/cart") {
+                //sample
+                //{"total":1,"cart":[{"item_id":3,"cookie_id":"1l6p2u0a1c3p0b1j","item_count":4,"created_at":"2026-09-14 20:45:08","updated_at":"2026-09-14 20:54:02"}]}
+ 
             }
-            if (document.body) {
-                var a = document.createElement('iframe');
-                a.height = 1;
-                a.width = 1;
-                a.style.position = 'absolute';
-                a.style.top = 0;
-                a.style.left = 0;
-                a.style.border = 'none';
-                a.style.visibility = 'hidden';
-                document.body.appendChild(a);
-                if ('loading' !== document.readyState) c();
-                else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c);
-                else {
-                    var e = document.onreadystatechange || function() {};
-                    document.onreadystatechange = function(b) {
-                        e(b);
-                        'loading' !== document.readyState && (document.onreadystatechange = e, c())
-                    }
+
+        });
+   
+        // add to cart btn pressed | product details page
+        const addToCart = document.querySelector('button[name="add-to-cart"]');
+        addToCart?.addEventListener('click', async (e)=> {
+            e.preventDefault();
+            const item_id = addToCart.getAttribute('rel'); 
+            const qty = document.querySelector('#quantity').value; 
+            const send = await cart.send(item_id, qty); 
+
+            showErrorToast("Item added to cart successfully", true);
+            updateNumbers(send.total);
+        });
+
+        function updateNumbers(numbersIncart) {
+            document.querySelectorAll('.cart-numbers sup').forEach((element)=>{
+                element.textContent = numbersIncart;
+            });
+        }
+
+        cartTable?.addEventListener('click', (event)=> { 
+            //remove products
+            if (event.target && event.target.classList.contains('remove')) { 
+                const item_id = event.target.getAttribute('rel');
+
+                if (confirm("Are you sure?")) {
+                    cart.send(item_id, 0);
+                    showErrorToast("Item added to cart successfully", true);
+                    setTimeout(() => { location.reload(); }, 3000); //or remove the table.row
                 }
-            }
-        })();
+                return;
+            } 
+        });
+
+        const cartqty = document.querySelectorAll('.cart-qty');
+        cartqty?.forEach(input => {
+            input.addEventListener('change', (event)=> {
+                const qty = event.target.value;
+                const item_id = event.target.getAttribute('rel');
+                const price = event.target.getAttribute('price');
+
+                const total = parseFloat(price) * parseFloat(qty);
+                 
+                const itemIdElement = document.querySelector(`#subtotal${item_id}`);
+                itemIdElement.textContent = `${total}`;
+
+                if (parseInt(qty) > 0) {
+                    cart.send(item_id, qty, 1);
+                    setTimeout(() => { location.reload(); }, 3000); //or remove the table.row
+                }
+
+                 
+            });
+        });
+  
+
+
     </script>
+     [Unit]
+Description=Cloud Atomation Next.js Application
+After=network.target
+
+[Service]
+Type=simple
+User=app
+Group=app
+WorkingDirectory=/home/app/cloud_atomation
+Environment=NODE_ENV=production
+Environment=PORT=3000
+Environment=HOME=/home/app
+ExecStart=/usr/bin/npm start
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

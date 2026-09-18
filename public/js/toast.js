@@ -1,14 +1,15 @@
 function showErrorToast(message, success = false, duration = 3000) {
     const container = document.getElementById('toast-container');
+    if (!container) alert("something went wrong")
     console.log("Toast fired");
     
     // Create element
     const toast = document.createElement('div');
     toast.className = 'parenticon toast1 ' + (success ? 'success' : 'error');
     toast.innerHTML = `<span class=''><span class="toast-icon">${success ? '&#10004;' : '&#10006;'}</span></span> ${message}`;
-    
+     
     // Append to container
-    container.appendChild(toast);
+    container.appendChild(toast); 
     
     // Auto-remove after specified duration
     setTimeout(() => {

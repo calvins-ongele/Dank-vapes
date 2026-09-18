@@ -891,6 +891,66 @@ class MyApp_Model extends Model
 		
 		echo $this->_ms(0, "Order completed successfully.");
 	}
+
+	/**
+	 * mysql data 
+	 * 
+	 * CREATE TABLE cart(
+			id int AUTO_INCREMENT primary key,
+			item_id int not null,
+			cookie_id varchar(100),
+			item_count int,
+			created_at datetime DEFAULT CURRENT_TIMESTAMP,
+			updated_at datetime ON UPDATE CURRENT_TIMESTAMP,
+
+			-- foreign key
+			FOREIGN KEY (item_id) REFERENCES products(id) ON DELETE CASCADE
+		);
+	 * 
+	 * 
+	 */
+	public function fetchcart($id = ''){ 
+		// clean post data
+		$post = json_decode(file_get_contents("php://input"),1);
+		$cookieId = CustomFunctions::cleanInput($post['cookie_id']??$_POST['cookie_id']??$id??'', 'string');
+
+		// own data fetch way
+		$data = $this->_get('cart', 'cookie_id', [ $cookieId ]);
+		echo json_encode([
+			'total'=>$data[0],
+			'cart'=>$data[1],
+		]);
+	} 
+	public function savecart(){ 
+		// clean post data
+		$post = json_decode(file_get_contents("php://input"),1);
+		$cookieId = CustomFunctions::cleanInput($post['cookie_id']??$_POST['cookie_id']??'', 'string');
+		$itemId = $post['item_id']??$_POST['item_id']??'';
+		$qty = $post['qty']??$_POST['qty']??'';
+		$checkout = $post['checkout']??$_POST['checkout']??'';
+		
+
+		if (!is_numeric($itemId )){
+			die(json_encode(['error'=>true, 'msg'=>'Invalid Item ID']));
+		}
+		if (!is_numeric($qty )){
+			die(json_encode(['error'=>true, 'msg'=>'Invalid Qty']));
+		}
+
+		$data = $this->_get('cart', 'cookie_id,item_id', [$cookieId, $itemId], 0);
+		if (empty($checkout)) {
+			$qty += ($data[1]['item_count'] ?? 0);
+		}
+
+		if ($data[0] > 0) {
+			//update count
+			$this->_update("cart", 'item_count', 'cookie_id,item_id', [$qty, $cookieId, $itemId] );
+		} else {
+			$this->_insert("cart", 'item_count, cookie_id,item_id', [$qty, $cookieId, $itemId] );
+		}
+
+		$this->fetchcart();
+	} 
          
 
 	

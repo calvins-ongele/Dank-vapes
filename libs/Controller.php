@@ -22,6 +22,7 @@ class Controller {
 			$this->model = new $modelName();
 		}
 		$this->view->_company = $this->model->_company();  
+		$this->view->_settings = $this->view->_company;
 		$this->view->_me = $this->model->me(); 
 		$this->view->version = CODE_VERSION;
 		$this->view->_content = $this->model->_content(); 

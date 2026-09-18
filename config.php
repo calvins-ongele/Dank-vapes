@@ -25,3 +25,4 @@ define('MAX_UPLOAD_SIZE_NAME', '5MBs');
 define('VIDEO_EXTENSIONS', "webm,mkv,flv,vob,ogv,ogg,rrc,gifv,mng,mov,avi,qt,wmv,yuv,rm,asf,amv,mp4,m4p,m4v,mpg,mp2,mpeg,mpe,mpv,m4v,svi,3gp,3g2,mxf,roq,nsv,flv,f4v,f4p,f4a,f4b,mod");
 define("IMAGE_EXTENSIONS", "jpg,jpeg,png,gif,webp");
 define("RESEND_API_KEY", $_ENV['RESEND_API_KEY']);
+define('CART_ID', $_ENV['CART_ID']);

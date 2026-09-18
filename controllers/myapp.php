@@ -24,6 +24,8 @@ class MyApp extends Controller {
     public function eventpdf() {
         $this->model->eventpdf();
     }
+	public function fetchcart(){ $this->model->fetchcart(); } 
+	public function savecart(){ $this->model->savecart(); } 
 
    	
     public function requests() { 

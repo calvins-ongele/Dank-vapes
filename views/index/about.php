@@ -1,127 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 
 <head>
-    <?php require 'public/includes/header.inc.php' ?>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "About Us | UK Trusted Online Pharmacy",
-            "description": "Explore clinically-proven weight loss treatments including Mounjaro and Wegovy. Clinician-led service with discreet delivery.",
-            "url": "https://www.<?= $_SERVER['SERVER_NAME'] ?>/",
-            "dateModified": "2026-01-26"
-        }
-    </script>
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [{
-                "@type": "ListItem",
-                "position": 1,
-                "name": "About Us",
-                "item": "https://www.<?= $_SERVER['SERVER_NAME'] ?>/"
-            }]
-        }
-    </script>
+    <?php require 'public/includes/header.inc.php'; ?>
+
 </head>
 
-<body>
+<body data-rsssl=1 class="home wp-singular page-template-default page page-id-83 wp-embed-responsive wp-theme-top-store wp-child-theme-core-store theme-top-store woocommerce-no-js th-advance-product-search woocommerce top-store-light">
 
-    <?php require "public/includes/navbar.inc.php" ?>
-    <!-- ==================== Header End Here ==================== -->
-    <main>
-
-        <!-- ==================== Breadcrumb Start Here ==================== -->
-
-
-        <!-----------------------about------------------------------->
-        <section class="container mt-2">
-            <div>
-                <div class="contentPageWrap aboutPageWrap">
-                    <div class="row">
-                        <div class="col-md-6 aboutLeft">
-                            <h1>About Us</h1>
-                            <div class="pageContent wysiwyg">
-                                <p><?= $this->_company['c_name'] ?> is a Registered UK Online Pharmacy. We have been online since 2012.&nbsp;We focus on customer care and our aim is make your online pharmacy experience as simple as possible.</p>
-                                <p>Our online doctor service&nbsp;offers treatments for a range of conditions, such as hair loss, erectile dysfunction, weight loss and more. You do not require a prescription, as our free online consultation allows us to assess suitability, before our doctor generates a prescription free of charge. This is then passed to the pharmacy team, who prepare and post your medication.</p>
-                                <h3>&nbsp;</h3>
-                                <h3>Complaints</h3>
-                                <p>We always try our best to give every patient a&nbsp;great online experience. &nbsp;If something does go wrong however, we will do our utmost to put things right. Should you wish to raise any complaint, dissatisfaction, worry or concern, please contact our complaints team by email with the subject &lsquo;complaints team.&rsquo;&nbsp; Provide as much detail as possible such as your name, order number and a description of the issue.&nbsp; We have an escalation process which allows for a non-biased, independent review of any issue.</p>
-                                <p>&nbsp;</p>
-                            </div><!-- .pageContent  -->
+    <div id="page" class="top-store-site">
+        <header>
+            <?php require 'public/includes/navbar.inc.php' ?>
+        </header>
+        <div id="content" class="page-content thunk-page">
+            <div class="content-wrap">
+                <div class="container">
+                    <div class="main-area active-sidebar">
+                        <div id="sidebar-primary" class="sidebar-content-area sidebar-1 ">
+                            <?php require 'public/includes/sidebar.categories.php' ?>
                         </div>
-                   
-                        <div class="col-md-6 aboutRight">
-                            <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Company Information #1
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        
-       <div class="innerSection wysiwyg">
-            <p><?= $this->_company['c_name'] ?> is owned by the UK registered company:&nbsp;Simple Online Healthcare Limited (company no:&nbsp;&nbsp;SC498329)</p>
-            <p>Registered Office:</p>
-            <p><strong>Address:</strong><br /><?= $this->_company['c_address'] ?><br />Tel : <?= $this->_company['c_tel'] ?><br />Email : <a href="mailto:<?= $this->_company['c_email'] ?>"  ><?= $this->_company['c_email'] ?></a></p>
-            <p><strong>Pharmacy GPhC registration number:</strong><br /><a href="https://www.pharmacyregulation.org/registers/pharmacy/registrationnumber/9011287" target="_blank">9011287</a></p>
-            <p><strong>Superintendent Pharmacist:</strong><br />Aamina Rafiq - GPhC number 2216332<br /><br /><strong>Responsible Pharmacist:</strong><br />Zahra Qureshi&nbsp;- GPhC number&nbsp;2216331</p>
+                        <div id="primary" class="primary-content-area">
+                            <div class="primary-content-wrap">
+                                <div class="page-head">
+                                    <h1 class="thunk-page-top-title entry-title">About Us</h1>
+                                    <nav aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs">
+                                        <h2 class="trail-browse"></h2>
+                                        <ul class="thunk-breadcrumb trail-items">
+                                            <li class="trail-item trail-end"><span>Home</span></li>
+                                            <li class="trail-item trail-end"><span>About Us</span></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+
+
+                                <div class="thunk-content-wrap">
+                                    <article id="post-1218">
+
+                                        <div class="entry-content">
+
+                                            <p class="has-text-align-center wp-block-paragraph">About Us</p>
+
+
+
+                                            <p class="wp-block-paragraph">The primary focus for <?= $this->_company['c_name'] ?> dispensary is to provide our beloved members with the confidence to shop <a href="/">cannabis </a>products online. Every single day. We assure you that our team continuously works hard around the clock so that our customers leave with a smile on their faces. All of our carefully inspected goods pass through quality control, ensuring they meet above industry quality standards. Above all, we offer products at a reasonable price that we firmly have a concern about. We also match all of our superb services by providing the fastest shipping times.</p>
+
+
+
+                                            <h2 class="wp-block-heading has-text-align-center">Why Choose <?= $this->_company['c_name'] ?>?</h2>
+
+
+
+                                            <p class="wp-block-paragraph"><?= $this->_company['c_name'] ?> is a mail-order cannabis service that offers exceptional quality products at a low price. Our brand carries a wide variety of products such as cannabis flowers, edibles, concentrates, vapes, CBD topicals and tinctures, and our own branded accessories. What separates our company from the competition? Wholesale products and bulk weed are our specialties. Ultimately, you can save more money on pot, with the more substantial variations you choose<a href="https://en.wikipedia.org/wiki/About_us">.</a></p>
+
+
+
+                                            <h3 class="wp-block-heading has-text-align-center">Dedicated Customer Satisfaction</h3>
+
+
+
+                                            <p class="wp-block-paragraph">Immediately upon your arrival at our website, we want you to feel confident and ensure that all our high-quality products are accurate to what you desired to order. Above all, our team strives to update all of our stock on cannabis products daily to serve you consistently. We have also ensured that every product we have in our inventory goes through a strict screening process and passes industry standards to avoid adverse health effects. Most importantly, you are guaranteed that what you order is what you get</p>
+
+
+
+                                            <h3 class="wp-block-heading has-text-align-center">High-Quality Products</h3>
+
+
+
+                                            <p class="wp-block-paragraph">Purchasing from <?= $this->_company['c_name'] ?> Dispensary means that you’ll receive very high-quality products that are on sale for a low price. Every product in our store has been passed through various testing phases to ensure that each item meets the company standards. Subsequently, after a product is approved, it’s ready for you to purchase.&nbsp; We have positive and established relationships with our cultivators and are in constant communication. Also, we understand that quality control is crucial to guarantee that the standard is always consistent and potent.</p>
+
+
+
+                                            <h3 class="wp-block-heading has-text-align-center">Dependable Customer Service</h3>
+
+
+
+                                            <p class="wp-block-paragraph">We are here because of your loyal support. Therefore, we owe it to you to provide first-class customer service to fulfill the best end-to-end customer experience from general questions related to your account to seeking assistance with finding products that are most suitable for you. Our commitment is to help you feel at ease, and we assure you that we will be here every step of the way.</p>
+
+
+
+                                            <p class="wp-block-paragraph">You can count on us to answer all the questions you may have or fix issues that may arise quickly and efficiently. We have also ensured that every product we have in our inventory goes through a strict screening process and passes industry standards to avoid adverse health effects. Most importantly, you are guaranteed that what you order is what you get.</p>
+
+
+
+                                            <h3 class="wp-block-heading"></h3> 
+                                            <h3 class="wp-block-heading has-text-align-center">Quick and Discreet Shipping</h3> 
+
+                                            <p class="wp-block-paragraph"><?= $this->_company['c_name'] ?> is an online dispensary that you can depend on and trust. We prepare your package within one business day, and we also have the highest regard for your privacy. Our discreet packaging enables you to shop with <?= $this->_company['c_name'] ?> in complete confidence. When we prepare your order at our facility, your product(s) are packaged in an air-tight vacuum-sealed bag to eliminate any odors.</p>
+
+
+
+                                            <p class="wp-block-paragraph"></p>
+                                        </div>
+                                    </article>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="sidebar-secondary" class="sidebar-content-area sidebar-2 ">
+                            <?php require 'public/includes/sidebar.secondary.php' ?>
+                        </div><!----------->
+                    </div>
+                </div>
+            </div>
         </div>
 
-      </div>
+
+
+        <footer>
+
+            <?php require 'public/includes/footer.inc.php' ?>
+        </footer>
     </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Our Prescribers #2
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        
-      <div class="innerSection wysiwyg">
-                                <p>All of our prescribers are UK based and registered with the relevant regulatory body.</p>
-                                <p>Our doctors are <a href="https://www.gmc-uk.org/registration-and-licensing/the-medical-register">GMC</a> registered.<br />Our pharmacist prescribers are <a href="https://www.pharmacyregulation.org/registers/pharmacist">GPhC</a> registered.<br />Our nurse prescribers are <a href="https://www.nmc.org.uk/registration/search-the-register/">NMC</a> registered.</p>
-                                <p>&nbsp;</p>
-                                <p><span style="text-decoration: underline;">DOCTORS</span></p>
-                                <p>Aniqah Ilyas - 7670761&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />Awais Alvi - 4574497&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />Avi Sharma -&nbsp;6077543<br />Sahira Dar -&nbsp;4705718<br />Shoaib Moughal -&nbsp;4704762</p>
-                                <p>&nbsp;</p>
-                                <p><span style="text-decoration: underline;">PHARMACISTS</span></p>
-                                <p>Abdal Alvi -&nbsp;2059572 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />Abdullah Mistry -&nbsp;2078474<br />Ali Bashir - 2059852<br />Amal Osman -&nbsp;2205049<br />Ariana Leila Jahanfar -&nbsp;2231370<br />Craig Marsh -&nbsp;2070724<br />Danyal Ahmed -&nbsp;2222428<br />Daryoush Safavi -&nbsp;2208917<br />Lara Seymour -&nbsp;2219773<br />Leanne McAuley -&nbsp;2087307<br />Markie Dales -&nbsp;2213621<br />Nicola Hopewell -&nbsp;2222145<br />Rubina Ali -&nbsp;2221311<br />Sabeela Yasin -&nbsp;2085618<br />Sultana Khaliq -&nbsp;2080082<br />Syed Shah -&nbsp;2221087<br />Ubayd Ali -&nbsp;2219322<br />Zaynab Araim -&nbsp;2077623<br />Zeenah Araim -&nbsp;2077620</p>
-                                <p>&nbsp;</p>
-                                <p><span style="text-decoration: underline;">NURSES</span></p>
-                                <p>Andrea Nagy -&nbsp;14D0189C<br />Jacqueline Brennan -&nbsp;07I1293S<br />Jason Smart -&nbsp;12A1007E<br />Justine Riley -&nbsp;05I0249E<br />Katie Taylor -&nbsp;98D0056W<br />Kerry-Anne Mitchell -&nbsp;11A0128S<br />Louise Purves -&nbsp;00J0100S<br />Naomi Garcia -&nbsp;95D0788E<br />Rebekah Parker -&nbsp;02I1881S<br />Sarah Hales -&nbsp;13E1415E<br />Sonia White -&nbsp;07I1272S<br />Susannah Russell -&nbsp;09B0097S<br />Theresa Deveney -&nbsp;90E0488S<br />Vicky Simpson -&nbsp;00H0155S</p>
-                            </div>
 
-      </div>
-    </div>
-  </div>
-
-  
-</div>
-
-                         
-                           
-                          
-                            
-                        </div>
-                    </div><!-- .contentWrap -->
-                </div><!-- .contentPageWrap -->
-            </div>
-        </section>
-
-
-
-    </main>
-    <!-- ==================== Footer Start Here ==================== -->
-    <?php require "public/includes/footer.inc.php" ?>
 </body>
 
 </html>

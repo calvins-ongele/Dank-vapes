@@ -1,461 +1,224 @@
- <div class="announcement-bar" aria-label="Announcements" data-astro-cid-3isblsjf>
-     <div class="announcement-bar__static" data-astro-cid-3isblsjf> <a href="#" class="announcement-bar__link" target="_blank" rel="noopener noreferrer" data-astro-cid-3isblsjf>
-             Rated 4.6 on Trustpilot
-         </a> <span class="announcement-bar__divider" aria-hidden="true" data-astro-cid-3isblsjf>|</span> <a href="https://www.thetimes.com/sunday-times-100-fast-growth/company-profile/article/uk-2026-simple-online-healthcare-w3x0vxmtt" class="announcement-bar__link" target="_blank" rel="noopener noreferrer nofollow" data-astro-cid-3isblsjf>
-             Listed in The Sunday Times 100, 2026
-         </a> </div>
-     <div class="announcement-bar__carousel" data-astro-cid-3isblsjf>
-         <div class="announcement-bar__slide announcement-bar__slide--active" data-astro-cid-3isblsjf> <a href="#" class="announcement-bar__link" target="_blank" rel="noopener noreferrer" data-astro-cid-3isblsjf>
-                 Rated 4.6 on Trustpilot
-             </a> </div>
-         <div class="announcement-bar__slide" data-astro-cid-3isblsjf> <a href="https://www.thetimes.com/sunday-times-100-fast-growth/company-profile/article/uk-2026-simple-online-healthcare-w3x0vxmtt" class="announcement-bar__link" target="_blank" rel="noopener noreferrer nofollow" data-astro-cid-3isblsjf>
-                 Listed in The Sunday Times 100, 2026
-             </a> </div>
-     </div>
- </div>
- <script type="module">
-     const e = document.querySelector(".announcement-bar__carousel");
-     if (e && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-         const a = e.querySelectorAll(".announcement-bar__slide");
-         let n = 0,
-             t = null;
-         const c = () => {
-                 a[n].classList.remove("announcement-bar__slide--active"), n = (n + 1) % a.length, a[n].classList.add("announcement-bar__slide--active")
-             },
-             r = () => {
-                 t = setInterval(c, 5e3)
-             },
-             s = () => {
-                 t !== null && (clearInterval(t), t = null)
-             };
-         r(), e.addEventListener("pointerenter", s), e.addEventListener("focusin", s), e.addEventListener("pointerleave", r), e.addEventListener("focusout", r)
-     }
- </script>
+<style>
+    @media screen and (max-width: 1026px) {
+        .menu-toggle {
+            display: block !important;
+        }
+    }
+    @media screen and (min-width: 1026px) {
+        #list-container {
+            display: none !important;
+        }
+    }
+</style>
 
- <header class="header" data-component="navigation" data-astro-cid-wimnwge2>
-     <div class="header__inner" data-astro-cid-wimnwge2> <a class="header__logo" href="/" data-astro-cid-wimnwge2>
-             <img src="/public/assets/uploads/<?= $this->_company['c_logo'] ?>" alt="<?= $this->_company['c_name'] ?>" width="140" height="32" loading="eager" fetchpriority="high" data-astro-cid-wimnwge2> </a>
-         <nav class="astronav-items astronav-toggle header__nav hidden" aria-label="Primary" data-astro-cid-wimnwge2="true">
-             <ul class="header__nav-list" data-astro-cid-wimnwge2>
-                 <li class="header__nav-item" data-astro-cid-wimnwge2>
-                     <menu class="astronav-dropdown header__dropdown" data-astro-cid-wimnwge2="true" aria-expanded="false"> 
-                        <button class="header__nav-link header__nav-link--trigger" type="button" data-astro-cid-wimnwge2> <span data-astro-cid-wimnwge2>Online Doctor</span> <svg viewBox="0 0 24 24" aria-hidden="true" class="header__caret" data-astro-cid-wimnwge2>
-                                 <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-wimnwge2></path>
-                             </svg> </button>
-                         <div class="astronav-dropdown dropdown-toggle hidden header__dropdown-items" data-astro-cid-wimnwge2="true" aria-expanded="false">
-                             <div class="header__dropdown-panel" data-astro-cid-wimnwge2>
-                                 <div class="header__dropdown-content" data-astro-cid-wimnwge2>
-                                     <div class="header__dropdown-two-pane" data-menu="Online Doctor" data-astro-cid-wimnwge2>
-                                         <div class="header__dropdown-pane header__dropdown-pane--left" data-astro-cid-wimnwge2>
-                                             <ul class="header__dropdown-left-list" data-astro-cid-wimnwge2>
-                                                 <li data-astro-cid-wimnwge2> <button class="header__dropdown-left-item" type="button" data-group="group-0" data-astro-cid-wimnwge2> Weight Care </button> </li>
-                                                 <li data-astro-cid-wimnwge2> <button class="header__dropdown-left-item" type="button" data-group="group-1" data-astro-cid-wimnwge2> Men's Health </button> </li>
-                                                 <li data-astro-cid-wimnwge2> <button class="header__dropdown-left-item" type="button" data-group="group-2" data-astro-cid-wimnwge2> Women's Health </button> </li>
-                                                 <li data-astro-cid-wimnwge2> <button class="header__dropdown-left-item" type="button" data-group="group-3" data-astro-cid-wimnwge2> Skin Conditions </button> </li>
-                                                 <li data-astro-cid-wimnwge2> <button class="header__dropdown-left-item" type="button" data-group="group-4" data-astro-cid-wimnwge2> General Health </button> </li>
-                                                 <li data-astro-cid-wimnwge2> <button class="header__dropdown-left-item" type="button" data-group="group-5" data-astro-cid-wimnwge2> Sexual Health </button> </li>
-                                                 <li data-astro-cid-wimnwge2> <button class="header__dropdown-left-item" type="button" data-group="group-6" data-astro-cid-wimnwge2> Chronic Conditions </button> </li>
-                                                 <li data-astro-cid-wimnwge2> <button class="header__dropdown-left-item" type="button" data-group="group-7" data-astro-cid-wimnwge2> Travel Health </button> </li>
-                                              
-                                             </ul>
-                                         </div>
-                                         <div class="header__dropdown-pane header__dropdown-pane--right" data-astro-cid-wimnwge2>
-                                            <?php 
-                                            $i = 0;
-                                            foreach($this->_categories as $category ) { 
-                                                if ($category['category_type'] != 'products') continue; ?>
-                                             <div class="header__dropdown-panel-content" data-group="group-<?= $i ?>" data-astro-cid-wimnwge2>
-                                                 <div class="header__desktop-content" data-astro-cid-wimnwge2>
-                                                     <div class="header__dropdown-group header__dropdown-group--level-0" data-astro-cid-wimnwge2>
-                                                         <div class="header__dropdown-children" data-astro-cid-wimnwge2>
-                                                             <div class="header__dropdown-group header__dropdown-group--level-1" data-astro-cid-wimnwge2> <a class="header__dropdown-group-link" href="/products/categories/<?= $category['slug'] ?>" data-astro-cid-wimnwge2> <?= $category['title'] ?> </a>
-                                                                 <div class="header__dropdown-section header__dropdown-section--level-1" data-astro-cid-wimnwge2>
-                                                                     <p class="header__dropdown-section-title" data-astro-cid-wimnwge2>Treatments Available</p>
-                                                                     <ul class="header__dropdown-section-list" data-astro-cid-wimnwge2>
-                                                                        <?php foreach ($category['inner_content'] as $row) {  ?>
-                                                                        <li data-astro-cid-wimnwge2> 
-                                                                            <a class="header__dropdown-section-link" href="/products/<?= $row['slug'] ?>" data-astro-cid-wimnwge2> <?= $row['title'] ?> </a> 
-                                                                        </li>
-                                                                        <?php } ?>
-                                                                            
-                                                                     </ul>
-                                                                 </div>
-                                                             </div>
-                                                            
-                                                           
-                                                         </div>
-                                                     </div>
-                                                 </div>
-                                                 
-                                             </div>
-                                             <?php $i++; } ?>
-                                           
-                                              
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </menu>
-                 </li>
-                 <li class="header__nav-item" data-astro-cid-wimnwge2>
-                     <menu class="astronav-dropdown header__dropdown" data-astro-cid-wimnwge2="true" aria-expanded="false"> <button class="header__nav-link header__nav-link--trigger" type="button" data-astro-cid-wimnwge2> <span data-astro-cid-wimnwge2>Advice</span> <svg viewBox="0 0 24 24" aria-hidden="true" class="header__caret" data-astro-cid-wimnwge2>
-                                 <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-wimnwge2></path>
-                             </svg> </button>
-                         <div class="astronav-dropdown dropdown-toggle hidden header__dropdown-items" data-astro-cid-wimnwge2="true" aria-expanded="false">
-                             <div class="header__dropdown-panel" data-astro-cid-wimnwge2>
-                                 <div class="header__dropdown-content" data-astro-cid-wimnwge2>
-                                     <div class="header__dropdown-two-pane" data-menu="Advice" data-astro-cid-wimnwge2>
-                                         <div class="header__dropdown-pane header__dropdown-pane--left" data-astro-cid-wimnwge2>
-                                             <ul class="header__dropdown-left-list" data-astro-cid-wimnwge2>
-                                                 <li data-astro-cid-wimnwge2> <button class="header__dropdown-left-item" type="button" data-group="group-0" data-astro-cid-wimnwge2> Weight Care </button> </li>
-                                                 <li data-astro-cid-wimnwge2> <button class="header__dropdown-left-item" type="button" data-group="group-1" data-astro-cid-wimnwge2> Men's Health </button> </li>
-                                                 <li data-astro-cid-wimnwge2> <button class="header__dropdown-left-item" type="button" data-group="group-2" data-astro-cid-wimnwge2> Women's Health </button> </li>
-                                                 <li data-astro-cid-wimnwge2> <button class="header__dropdown-left-item" type="button" data-group="group-3" data-astro-cid-wimnwge2> General Conditions </button> </li>
-                                             </ul>
-                                         </div>
-                                         <div class="header__dropdown-pane header__dropdown-pane--right" data-astro-cid-wimnwge2>
-                                            <?php $i = 0;
-                                                  foreach($this->_categories as $category ) { 
-                                                    if ($category['category_type'] != 'products') continue; ?>
-                                             <div class="header__dropdown-panel-content" data-group="group-<?= $i ?>" data-astro-cid-wimnwge2>
-                                                 <div class="header__desktop-content" data-astro-cid-wimnwge2>
-                                                     <div class="header__dropdown-group header__dropdown-group--level-0" data-astro-cid-wimnwge2>
-                                                         <div class="header__dropdown-children" data-astro-cid-wimnwge2>
-                                                             <div class="header__dropdown-group header__dropdown-group--level-1" data-astro-cid-wimnwge2> <a class="header__dropdown-group-link" href="/content/?category=<?= $category['slug'] ?>" data-astro-cid-wimnwge2> <?= $category['title'] ?> </a> </div>
-                                                         </div>
-                                                     </div>
-                                                 </div>
-                                                 <details class="header__mobile-group-accordion" data-astro-cid-wimnwge2>
-                                                     <summary class="header__mobile-group-toggle" data-astro-cid-wimnwge2> <span data-astro-cid-wimnwge2><?= $category['title'] ?></span> <svg viewBox="0 0 24 24" aria-hidden="true" class="header__caret" data-astro-cid-wimnwge2>
-                                                             <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-wimnwge2></path>
-                                                         </svg> </summary>
-                                                     <div class="header__mobile-group-content" data-astro-cid-wimnwge2>
-                                                         <ul class="header__mobile-links" data-astro-cid-wimnwge2>
-                                                             <?php foreach ($category['inner_content'] as $row) {  ?>
-                                                                <li data-astro-cid-wimnwge2> 
-                                                                    <a class="header__mobile-link header__mobile-link--subcat" href="/content/<?= $row['slug'] ?>" data-astro-cid-wimnwge2> <?= $row['title'] ?> </a> 
-                                                                </li>
-                                                                <?php } ?>
-                                                                             
-                                                         </ul>
-                                                     </div>
-                                                 </details>
-                                             </div>
-                                             <?php $i++; } ?>
-                                             
-                                             
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </menu>
-                 </li>
-                 <li class="header__nav-item header__nav-item--mobile-only" data-astro-cid-wimnwge2> <a class="header__nav-link" href="/search/" data-astro-cid-wimnwge2> Search </a> </li>
-                 <li class="header__nav-item header__nav-item--mobile-only" data-astro-cid-wimnwge2> <a class="header__nav-link" href="/contact-us" data-astro-cid-wimnwge2> Support </a> </li>
-                 <li class="header__nav-item header__nav-item--mobile-only" data-astro-cid-wimnwge2> <a class="header__nav-link" href="/login/" data-astro-cid-wimnwge2> Account </a> </li>
-             </ul>
-         </nav>
-         <div class="header__actions" data-astro-cid-wimnwge2> <a class="header__support" href="/contact-us" data-astro-cid-wimnwge2>
-                 Support
-             </a>   
-                 <!-- <a class="header__icon header__icon--basket" href="/basket/" aria-label="Basket" data-header-basket-link data-astro-cid-wimnwge2> 
-                    <svg viewBox="0 0 24 24" aria-hidden="true" data-astro-cid-wimnwge2>
-                     <path d="M5 10h14l-1.6 8H6.6L5 10Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" data-astro-cid-wimnwge2></path>
-                     <path d="M8 10 12 5l4 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-wimnwge2></path>
-                     <path d="M9 13v2.5M12 13v2.5M15 13v2.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" data-astro-cid-wimnwge2></path>
-                 </svg> 
-                 <span class="header__basket-count" data-header-basket-count hidden data-astro-cid-wimnwge2></span> 
-                </a>  -->
-                 <button id="astronav-menu" aria-label="Toggle Menu"> 
-                    <svg fill="currentColor" class="header__menu-toggle" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-astro-cid-wimnwge2="true">
-                     <title>Toggle Menu</title>
-                     <path class="astronav-close-icon astronav-toggle hidden" fill-rule="evenodd" clip-rule="evenodd" d="M18.278 16.864a1 1 0 01-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 01-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 011.414-1.414l4.829 4.828 4.828-4.828a1 1 0 111.414 1.414l-4.828 4.829 4.828 4.828z"></path>
-                     <path class="astronav-open-icon astronav-toggle" fill-rule="evenodd" d="M4 5h16a1 1 0 010 2H4a1 1 0 110-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2z"></path>
-                 </svg> </button> </div>
-     </div>
-     <script>
-         (function() {
-             const closeOnClick = true;
 
-             ["DOMContentLoaded", "astro:after-swap"].forEach((event) => {
-                 document.addEventListener(event, addListeners);
-             });
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 
-             // Function to clone and replace elements
-             function cloneAndReplace(element) {
-                 const clone = element.cloneNode(true);
-                 element.parentNode.replaceChild(clone, element);
-             }
 
-             function addListeners() {
-                 // Clean up existing listeners
-                 const oldMenuButton = document.getElementById("astronav-menu");
-                 if (oldMenuButton) {
-                     cloneAndReplace(oldMenuButton);
-                 }
 
-                 const oldDropdownMenus = document.querySelectorAll(".astronav-dropdown");
-                 oldDropdownMenus.forEach((menu) => {
-                     cloneAndReplace(menu);
-                 });
 
-                 // Mobile nav toggle
-                 const menuButton = document.getElementById("astronav-menu");
-                 menuButton && menuButton.addEventListener("click", toggleMobileNav);
+<div class="main-header mhdrfour callto left  cnv-none">
+    <div class="container">
+        <div class="main-header-bar parent-theme thnk-col-3">
+            <div class="main-header-col1">
+                <span class="logo-content">
+                    <div class="thunk-logo">
+                    </div>
+                    <div class="site-title"><span>
+                            <a href="/" rel="home"><?= $this->_company['c_name'] ?></a>
+                        </span>
+                    </div>
+                </span>
 
-                 // Dropdown menus
-                 const dropdownMenus = document.querySelectorAll(".astronav-dropdown");
-                 dropdownMenus.forEach((menu) => {
-                     const button = menu.querySelector("button");
-                     button &&
-                         button.addEventListener("click", (event) =>
-                             toggleDropdownMenu(event, menu, dropdownMenus)
-                         );
+            </div>
+            <div class="main-header-col2">
 
-                     // Handle Submenu Dropdowns
-                     const dropDownSubmenus = menu.querySelectorAll(
-                         ".astronav-dropdown-submenu"
-                     );
+                <div id='thaps-search-box' class="thaps-search-box  submit-active  default_style">
 
-                     dropDownSubmenus.forEach((submenu) => {
-                         const submenuButton = submenu.querySelector("button");
-                         submenuButton &&
-                             submenuButton.addEventListener("click", (event) => {
-                                 event.stopImmediatePropagation();
-                                 toggleSubmenuDropdown(event, submenu);
-                             });
-                     });
-                 });
+                    <form class="thaps-search-form" action='/shop' id='thaps-search-form' method='get'>
 
-                 // Clicking away from dropdown will remove the dropdown class
-                 document.addEventListener("click", closeAllDropdowns);
+                        <div class="thaps-from-wrap">
 
-                 if (closeOnClick) {
-                     handleCloseOnClick();
-                 }
-             }
+                            <input id='thaps-search-autocomplete-1' name='q' placeholder='Search for products...' class="thaps-search-autocomplete thaps-form-control" value='' type='text' title='Search' />
 
-             function toggleMobileNav() {
-                 [...document.querySelectorAll(".astronav-toggle")].forEach((el) => {
-                     el.classList.toggle("hidden");
-                 });
-             }
 
-             function toggleDropdownMenu(event, menu, dropdownMenus) {
-                 toggleMenu(menu);
 
-                 // Close one dropdown when selecting another
-                 Array.from(dropdownMenus)
-                     .filter((el) => el !== menu && !menu.contains(el))
-                     .forEach(closeMenu);
+                            <div class="thaps-preloader"></div>
 
-                 event.stopPropagation();
-             }
 
-             function toggleSubmenuDropdown(event, submenu) {
-                 event.stopPropagation();
-                 toggleMenu(submenu);
 
-                 // Close sibling submenus at the same nesting level
-                 const siblingSubmenus = submenu
-                     .closest(".astronav-dropdown")
-                     .querySelectorAll(".astronav-dropdown-submenu");
-                 Array.from(siblingSubmenus)
-                     .filter((el) => el !== submenu && !submenu.contains(el))
-                     .forEach(closeMenu);
-             }
 
-             function closeAllDropdowns(event) {
-                 const dropdownMenus = document.querySelectorAll(".dropdown-toggle");
-                 const dropdownParent = document.querySelectorAll(
-                     ".astronav-dropdown, .astronav-dropdown-submenu"
-                 );
-                 const isButtonInsideDropdown = [
-                     ...document.querySelectorAll(
-                         `.astronav-dropdown button, .astronav-dropdown label, .astronav-dropdown input,
-	  .astronav-dropdown-submenu button, .astronav-dropdown-submenu label, .astronav-dropdown-submenu input,
-	  #astronav-menu`
-                     ),
-                 ].some((button) => button.contains(event.target));
-                 if (!isButtonInsideDropdown) {
-                     dropdownMenus.forEach((d) => {
-                         // console.log("I ran", d);
-                         // if (!d.contains(event.target)) {
-                         d.classList.remove("open");
-                         d.removeAttribute("open");
-                         d.classList.add("hidden");
-                         // }
-                     });
-                     dropdownParent.forEach((d) => {
-                         d.classList.remove("open");
-                         d.removeAttribute("open");
-                         d.setAttribute("aria-expanded", "false");
-                     });
-                 }
-             }
+                            <button id='thaps-search-button' value="Submit" type='submit'>
 
-             function toggleMenu(menu) {
-                 menu.classList.toggle("open");
-                 const expanded = menu.getAttribute("aria-expanded") === "true";
-                 menu.setAttribute("aria-expanded", expanded ? "false" : "true");
-                 menu.hasAttribute("open") ?
-                     menu.removeAttribute("open") :
-                     menu.setAttribute("open", "");
+                                Search</button> <input type="hidden" name="post_type" value="product" />
 
-                 const dropdownToggle = menu.querySelector(".dropdown-toggle");
-                 const dropdownExpanded = dropdownToggle.getAttribute("aria-expanded");
-                 dropdownToggle.classList.toggle("hidden");
-                 dropdownToggle.setAttribute(
-                     "aria-expanded",
-                     dropdownExpanded === "true" ? "false" : "true"
-                 );
-             }
+                            <span class="label label-default" id="selected_option"></span>
 
-             function closeMenu(menu) {
-                 // console.log("closing", menu);
-                 menu.classList.remove("open");
-                 menu.removeAttribute("open");
-                 menu.setAttribute("aria-expanded", "false");
-                 const dropdownToggles = menu.querySelectorAll(".dropdown-toggle");
-                 dropdownToggles.forEach((toggle) => {
-                     toggle.classList.add("hidden");
-                     toggle.setAttribute("aria-expanded", "false");
-                 });
-             }
+                        </div>
 
-             function handleCloseOnClick() {
-                 const navMenuItems = document.querySelector(".astronav-items");
-                 const navToggle = document.getElementById("astronav-menu");
-                 const navLink = navMenuItems && navMenuItems.querySelectorAll("a");
+                    </form>
 
-                 const MenuIcons = navToggle.querySelectorAll(".astronav-toggle");
+                </div>
 
-                 navLink &&
-                     navLink.forEach((item) => {
-                         item.addEventListener("click", () => {
-                             navMenuItems?.classList.add("hidden");
-                             MenuIcons.forEach((el) => {
-                                 el.classList.toggle("hidden");
-                             });
-                         });
-                     });
-             }
-         })();
-     </script>
- </header>
 
- <script type="module">
-     const u = "__memberAuthState",
-         l = "member-auth-state",
-         m = t => {
-             const e = t?.basket?.item_count ?? t?.basket_item_count;
-             if (typeof e == "number" && Number.isFinite(e)) return Math.max(0, Math.floor(e));
-             if (typeof e == "string" && e.trim() !== "") {
-                 const n = Number.parseInt(e, 10);
-                 return Number.isFinite(n) ? Math.max(0, n) : 0
-             }
-             return 0
-         },
-         s = t => {
-             const e = document.querySelector("[data-header-basket-link]"),
-                 n = document.querySelector("[data-header-basket-count]");
-             if (!(e instanceof HTMLAnchorElement) || !(n instanceof HTMLElement)) return;
-             const i = m(t);
-             if (t?.basket?.url && typeof t.basket.url == "string" && (e.href = t.basket.url), i <= 0) {
-                 n.textContent = "", n.setAttribute("hidden", ""), e.setAttribute("aria-label", "Basket");
-                 return
-             }
-             const o = i > 99 ? "99+" : String(i);
-             n.textContent = o, n.removeAttribute("hidden"), e.setAttribute("aria-label", `Basket, ${i} ${i===1?"item":"items"}`)
-         },
-         f = () => {
-             s(window[u]), window.addEventListener(l, t => {
-                 s(t.detail)
-             })
-         },
-         g = () => {
-             const t = document.querySelector(".header__nav"),
-                 e = document.getElementById("astronav-menu");
-             !t || !e || t.classList.contains("hidden") || (t.classList.add("hidden"), e.querySelectorAll(".astronav-toggle").forEach(i => i.classList.toggle("hidden")))
-         },
-         b = () => {
-             document.addEventListener("click", t => {
-                 const e = t.target;
-                 if (!(e instanceof Element)) return;
-                 const n = document.querySelector(".header__nav"),
-                     i = document.getElementById("astronav-menu");
-                 n?.contains(e) || i?.contains(e) || g()
-             })
-         },
-         h = () => {
-             document.querySelectorAll(".header__mobile-group-accordion > summary, .header__mobile-subgroup > summary").forEach(t => {
-                 t.dataset.initialized !== "true" && (t.dataset.initialized = "true", t.addEventListener("click", e => {
-                     e.stopPropagation()
-                 }))
-             })
-         },
-         E = () => {
-             document.querySelectorAll(".header__dropdown-two-pane").forEach(t => {
-                 if (!(t instanceof HTMLElement) || t.dataset.initialized === "true") return;
-                 t.dataset.initialized = "true";
-                 const e = Array.from(t.querySelectorAll(".header__dropdown-left-item")),
-                     n = Array.from(t.querySelectorAll(".header__dropdown-panel-content")),
-                     i = a => {
-                         e.forEach(r => {
-                             r.classList.toggle("is-active", r.getAttribute("data-group") === a)
-                         }), n.forEach(r => {
-                             r.classList.toggle("is-active", r.getAttribute("data-group") === a)
-                         })
-                     },
-                     o = e[0]?.getAttribute("data-group");
-                 o && i(o), e.forEach(a => {
-                     a.addEventListener("click", () => {
-                         const r = a.getAttribute("data-group");
-                         r && i(r)
-                     })
-                 })
-             })
-         },
-         c = () => {
-             b(), E(), h()
-         },
-         d = () => {
-             typeof window > "u" || ("requestIdleCallback" in window ? window.requestIdleCallback(c, {
-                 timeout: 2e3
-             }) : window.setTimeout(c, 0))
-         };
-     window.addEventListener("load", d, {
-         once: !0
-     });
-     window.addEventListener("astro:after-swap", d);
-     f();
- </script>
- <div class="sticky-cta" data-component="sticky-cta" data-astro-cid-wi5z2meu>
-     <div class="sticky-cta__inner" data-astro-cid-wi5z2meu>
-         <div class="sticky-cta__content" data-astro-cid-wi5z2meu>
-             <div class="sticky-cta__state" data-astro-cid-wi5z2meu>
-                 <p class="sticky-cta__text" data-astro-cid-wi5z2meu>Take the first steps to feeling healthier overall</p> <a class="sticky-cta__button" href="/weight-loss/" data-astro-cid-wi5z2meu> 
-                    <span data-astro-cid-wi5z2meu>Weight Loss Treatments</span> <svg viewBox="0 0 24 24" aria-hidden="true" data-astro-cid-wi5z2meu>
-                         <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-wi5z2meu></path>
-                     </svg> </a>
-             </div>
-         </div>
-     </div>
- </div>
- <script type="module">
-     document.addEventListener("DOMContentLoaded", () => {
-         const e = document.querySelector('[data-component="sticky-cta"]'),
-             t = document.querySelector('[data-component="hero"]');
-         if (!e || !t) return;
-         new IntersectionObserver(o => {
-             o.forEach(s => {
-                 s.isIntersecting ? e.classList.remove("is-visible") : e.classList.add("is-visible")
-             })
-         }, {
-             threshold: 0,
-             rootMargin: "-100px 0px 0px 0px"
-         }).observe(t)
-     });
- </script>
+
+            </div>
+            <div class="main-header-col3">
+                <div class="thunk-icon-market">
+                    <div class="header-icon">
+                        <span><a href="/login/" title="Show Account"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user w-6 h-6 stroke-[1.5px]" aria-hidden="true">
+                                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg></a></span>
+
+                        <div class="cart-icon">
+                        </div>
+
+                    </div>
+ <div class="header-iconx">
+                    
+                            <a href="/cart/">
+                            <i class="fa fa-cart-shopping"> </i>
+                            <span class="cart-numbers"><sup class="suptop">0</sup></span></a>   
+</div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="below-header  mhdrfour left callto">
+    <div class="container">
+        <div class="below-header-bar thnk-col-3">
+            <div class="below-header-col1">
+                <div class="menu-category-list">
+                    <div class="toggle-cat-wrap">
+                        <p class="cat-toggle" tabindex="0">
+                            <span class="cat-icon">
+                                <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; vertical-align: middle;">
+                                    <path d="M5 7h14"></path>
+                                    <path d="M5 12h9"></path>
+                                    <path d="M5 17h11"></path>
+                                </svg>
+                            </span>
+                            <span class="toggle-title">Category</span>
+                            <span class="toggle-icon"></span>
+                        </p>
+                    </div>
+                    <ul class="product-cat-list thunk-product-cat-list" data-menu-style="vertical">
+                       <?php foreach($this->_categories as $category) {
+                                            if ($category['category_type'] != 'products') continue;
+                                        ?>
+                        <li class="cat-item cat-item-21">
+                            <a href="/product-category/<?= $category['slug'] ?>"><?= $category['title'] ?></a>
+                        </li>
+                        <?php } ?>
+                        
+                    </ul>
+                </div>
+                <nav>
+
+                    <div class="menu-toggle"  >
+                        <button type="button" class="menu-btn" id="menu-btn">
+                            <div class="btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-text-align-justify w-5 h-5 text-gray-500 group-hover:text-gray-700" aria-hidden="true">
+                                    <path d="M3 5h18"></path>
+                                    <path d="M3 12h18"></path>
+                                    <path d="M3 19h18"></path>
+                                </svg> 
+                            </div>
+                            <span class="icon-text">Menu</span>
+                        </button>
+                    </div>
+                    <div class="sider main  top-store-menu-hide overcenter">
+                        <div class="sider-inner">
+                            <ul id="top-store-menu" class="top-store-menu" data-menu-style="horizontal">
+                                <li id="menu-item-41" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-41"><a href="/" aria-current="page"><span class="top-store-menu-link">Home</span></a></li>
+                                <li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-42"><a href="/shop/"><span class="top-store-menu-link">Shop</span></a>
+                                    <ul class="sub-menu">
+                                         
+                                    <?php foreach($this->_categories as $category) {
+                                            if ($category['category_type'] != 'products') continue;
+                                        ?>
+                                        <li id="menu-item-?= $category['id'] ?>" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-?= $category['id'] ?>"><a href="/product-category/<?= $category['slug'] ?>"><span class="top-store-menu-link"><?= $category['title'] ?></span></a></li>
+                                         <?php } ?>
+                                         
+                                    </ul>
+                                </li>
+                                <li id="menu-item-1219" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1219"><a href="/about-us/"><span class="top-store-menu-link">About Us</span></a></li>
+                                <li id="menu-item-789" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-789"><a href="/pay-with-bitcoin/"><span class="top-store-menu-link">Pay With Bitcoin</span></a></li>
+                                <li id="menu-item-791" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-791"><a href="/refund_returns/"><span class="top-store-menu-link">Refund Policy</span></a></li>
+                                <li id="menu-item-1216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1216"><a href="/contact-us/"><span class="top-store-menu-link">Contact Us</span></a></li>
+                                <li id="menu-item-796" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-796">
+                                    <a href="/faq/"><span class="top-store-menu-link">FAQ</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                
+            </div>
+            <div class="below-header-col2">
+                <div class="header-support-wrap">
+                    <div class="header-support-icon">
+                        <a class="callto-icon" href="tel:<?= $this->_company['c_tel'] ?>">
+                            <svg width="0.833em" height="1em" viewBox="0 0 12.5 15" fill="currentColor" stroke="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; vertical-align: middle;">
+                                <path
+                                    d="M10.5 13.5c-0.8 0.8 -2.1 1.1 -3.2 0.7 -1.8 -0.7 -3.5 -1.8 -4.8 -3.1 -1.3 -1.3 -2.4 -3 -3.1 -4.8 -0.4 -1.1 -0.1 -2.4 0.7 -3.2L1.5 1.7c0.4 -0.4 1 -0.4 1.4 0L4.5 3.3c0.4 0.4 0.4 1 0 1.4L3.8 5.4c-0.2 0.2 -0.2 0.5 -0.1 0.7 0.5 1.1 1.2 2.1 2.1 3 0.9 0.9 1.9 1.6 3 2.1 0.2 0.1 0.5 0.1 0.7 -0.1l0.7 -0.7c0.4 -0.4 1 -0.4 1.4 0l1.6 1.6c0.4 0.4 0.4 1 0 1.4L10.5 13.5z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header-support-content">
+                        <span class="sprt-tel"><span>Phone</span> <a href="tel:<?= $this->_company['c_tel'] ?>"><?= $this->_company['c_tel'] ?></a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .hide {
+                display: none;
+            }
+            .show {
+                display:flex;
+                justify-content: end;
+                padding:6px;
+                margin:4px;
+            }
+            .sublist li {
+                /* display: inline-block; */
+                list-style-type: none;
+                margin-right:4px; 
+            }
+        </style>
+        <div class="hide" id="list-container" >
+            <ul class="sublist">
+                <li><a href="/">Home</a></li>
+                <li><a href="/shop">Shop</a></li>
+                <li><a href="/about-us">About</a></li>
+                <li><a href="/pay-with-bitcoin">Pay with Bitcoin</a></li>
+                <li><a href="/refund_returns">Refund Policy</a></li>
+                <li><a href="/contact-us">Contact</a></li> 
+                <li><a href="/faq">FAQ</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <script>
+        const menu = document.querySelector('.menu-toggle');
+        const list = document.querySelector('#list-container');
+
+        menu.addEventListener('click', ()=> {
+            if (list.classList.contains('hide')) {
+                toggle('show', 'hide');
+            } else toggle('hide', 'show');
+        });
+
+        function toggle(add, remove) {
+            list.classList.remove(remove);
+            list.classList.add(add);
+        }
+    </script>

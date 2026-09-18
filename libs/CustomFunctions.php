@@ -494,9 +494,7 @@ class CustomFunctions {
                 $data = filter_var($data, FILTER_SANITIZE_URL);
                 return filter_var($data, FILTER_VALIDATE_URL) ? $data: false;
             case 'float':
-                return filter_var($data, FILTER_VALIDATE_FLOAT);
-            case 'url':
-                return filter_var($data, FILTER_VALIDATE_URL);
+                return filter_var($data, FILTER_VALIDATE_FLOAT); 
             case 'string':
             default:
                 return htmlspecialchars($data, ENT_QUOTES, 'UTF-8');

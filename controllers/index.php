@@ -9,6 +9,7 @@ class Index extends Controller {
 	}
 	
 	public function index() {  
+		$this->view->products = $this->model->products();
 	    $this->view->title = "{$this->_company()['c_name']} | {$this->_company()['c_short_desc']}";
 		$this->view->render('index/index');
 	} 
